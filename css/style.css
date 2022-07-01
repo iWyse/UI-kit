@@ -3681,8 +3681,8 @@ a:focus-visible,
 
 @media (max-width: 35em) {
   .chat__items {
-    -ms-grid-columns: (240px)[1];
-    grid-template-columns: repeat(1, 240px);
+    -ms-grid-columns: 240px;
+    grid-template-columns: 240px;
   }
 }
 
