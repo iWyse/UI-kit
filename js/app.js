@@ -568,15 +568,6 @@
         }
     }
     modules_flsModules.select = new SelectConstructor({});
-    let addWindowScrollEvent = false;
-    setTimeout((() => {
-        if (addWindowScrollEvent) {
-            let windowScroll = new Event("windowScroll");
-            window.addEventListener("scroll", (function(e) {
-                document.dispatchEvent(windowScroll);
-            }));
-        }
-    }), 0);
     const requestAnimFrame = function() {
         if ("undefined" === typeof window) return function(callback) {
             return callback();

@@ -5,7 +5,7 @@
 	<title>RevKit</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220701222306">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220701230217">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -322,7 +322,7 @@
 					<form class="form-wrapper">
 						<div class="form-group">
 							<div class="form-group__input">
-								<label class="label" for="input-placeholder"></label>
+								<label сlass="label" for="input-placeholder">Label</label>
 								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Placeholder" id="input-placeholder" class="input">
 								<div class="error-message">Validation error message.</div>
 							</div>
@@ -1588,8 +1588,8 @@
 			</section>
 		</main>
 	</div>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js?_v=20220701222306"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220701222306"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js?_v=20220701230217"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220701230217"></script>
 	<script>
 		const barData = {
 			labels: [
@@ -1833,18 +1833,9 @@
 		const lineChart = new Chart(document.getElementById('lineChart'), lineConfig);
 		const donutChart = new Chart(document.getElementById('donutChart'), donutConfig);
 	</script>
-	<script src="js/app.min.js?_v=20220701222306"></script>
+	<script src="js/app.min.js?_v=20220701230217"></script>
 
 
 </body>
 
 </html>
-
-<!-- В 13 блоке сделал такую реализацию что текст перекрывает картинку, текст видно вполне хорошо -->
-<!-- функционал мобильного меню не включал, я думаю тут главное показать вариации верстки а не работу меню -->
-<!-- 07 пункт - видимо дизайнер настолько устал что забыл палитру цветов которую юзал. Я оставил цвет error. Выглядит странно просто что везде красный а тут розовый взялся. -->
-<!-- размеры кнопок не по макету -->
-<!-- Не понял почему при изменении первого чекбокса они прыгают -->
-<!-- Не совсем понял роль надписей под инпутами их нужно как то реализовывать или это просто верстка без логики -->
-<!-- Почему после сохранения страницы кидает наверх? -->
-<!-- disabled select - делается через классы? -->
