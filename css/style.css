@@ -1075,19 +1075,31 @@ body {
 
 .chat__wrapper {
   margin: 70px 0;
-}
-
-.chat__items {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (240px)[4];
   grid-template-columns: repeat(4, 240px);
   gap: 40px;
-  margin: 0px 0px 50px 0px;
+}
+
+@supports (gap: clamp( 1.25rem , 0.8726415094rem  +  1.8867924528vw , 2.5rem )) {
+  .chat__items {
+    gap: clamp( 1.25rem , 0.8726415094rem  +  1.8867924528vw , 2.5rem );
+  }
+}
+
+@supports not (gap: clamp( 1.25rem , 0.8726415094rem  +  1.8867924528vw , 2.5rem )) {
+  .chat__items {
+    gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 66.25);
+  }
 }
 
 .chat__item {
   position: relative;
+}
+
+.chat__item:not(:last-child) {
+  margin-bottom: 50px;
 }
 
 .chat__item--normal .chat__message {
@@ -3637,6 +3649,16 @@ a:focus-visible,
   }
 }
 
+@media (max-width: 70em) {
+  .chat__wrapper {
+    -ms-grid-columns: (240px)[2];
+    grid-template-columns: repeat(2, 240px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 60em) {
   .cards__grid {
     -webkit-box-pack: center;
@@ -3684,13 +3706,6 @@ a:focus-visible,
   }
 }
 
-@media (max-width: 35em) {
-  .chat__items {
-    -ms-grid-columns: 240px;
-    grid-template-columns: 240px;
-  }
-}
-
 @media (max-width: 380px) {
   .chartBox__donut {
     height: 180px;
@@ -3719,33 +3734,6 @@ a:focus-visible,
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-@media (max-width: 71.25em) {
-  .chat__items {
-    -ms-grid-columns: (240px)[2];
-    grid-template-columns: repeat(2, 240px);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    row-gap: 40px;
-  }
-
-@supports ((-moz-column-gap: clamp( 2.5rem , 2.1226415094rem  +  1.8867924528vw , 3.75rem )) or (column-gap: clamp( 2.5rem , 2.1226415094rem  +  1.8867924528vw , 3.75rem ))) {
-    .chat__items {
-      -webkit-column-gap: clamp( 2.5rem , 2.1226415094rem  +  1.8867924528vw , 3.75rem );
-         -moz-column-gap: clamp( 2.5rem , 2.1226415094rem  +  1.8867924528vw , 3.75rem );
-              column-gap: clamp( 2.5rem , 2.1226415094rem  +  1.8867924528vw , 3.75rem );
-    }
-}
-
-@supports not ((-moz-column-gap: clamp( 2.5rem , 2.1226415094rem  +  1.8867924528vw , 3.75rem )) or (column-gap: clamp( 2.5rem , 2.1226415094rem  +  1.8867924528vw , 3.75rem ))) {
-    .chat__items {
-      -webkit-column-gap: calc(2.5rem + 1.25 * (100vw - 20rem) / 66.25);
-         -moz-column-gap: calc(2.5rem + 1.25 * (100vw - 20rem) / 66.25);
-              column-gap: calc(2.5rem + 1.25 * (100vw - 20rem) / 66.25);
-    }
-}
 }
 
 @media (max-width: 67.5em) {
@@ -3920,6 +3908,13 @@ a:focus-visible,
   .callout-row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .chat__wrapper {
+    -ms-grid-columns: 240px;
+    grid-template-columns: 240px;
   }
 }
 
