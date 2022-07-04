@@ -5,7 +5,7 @@
 	<title>RevKit</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220703163639">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220704223205">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,13 +13,38 @@
 <body>
 	<div class="wrapper">
 		<main class="page">
-			<!-- <section class="typeface">
+			<section class="navigation">
+				<div class="navigation__container">
+					<div class="navigation__wrapper">
+						<div class="navigation__menu">
+							<div class="navigation__items">
+								<div class="navigation__logo">
+									<img src="img/logos/LogoDark.svg" alt="Dark logo">
+								</div>
+								<div class="menu-body">
+									<div class="overlay"></div>
+									<nav class="menu" id="menu">
+										<div class="menu-mobile-header">
+											<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
+										</div>
+										<ul class="menu-list">
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
+										</ul>
+									</nav>
+									<button type="button" class="menu-mobile-toggle _icon-burger"><span>Menu</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section class="typeface">
 				<div class="typeface__container">
 					<h2 class="typeface__title title"><span class="title__number">01. </span>Typeface</h2>
 					<div class="typeface-content">
-						<div class="typeface-content__typework typeface-typework"><a class="typeface-typework__fontface"
-								href="https://fonts.google.com/specimen/IBM+Plex+Sans?sidebar.open=&selection.family=IBM+Plex+Sans:wght@400;600"
-								rel="nofollow noopener" target="_blank">Aa</a></div>
+						<div class="typeface-content__typework typeface-typework"><a class="typeface-typework__fontface" href="https://fonts.google.com/specimen/IBM+Plex+Sans?sidebar.open=&selection.family=IBM+Plex+Sans:wght@400;600" rel="nofollow noopener" target="_blank">Aa</a></div>
 						<div class="typeface-content__info typeface-info">
 							<h4 class="typeface-info__desc">Open Source</h4>
 							<h3 class="typeface-info__title">IBM Plex Sans</h3>
@@ -34,9 +59,7 @@
 									Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
 							</div>
 							<span class="typeface-info__download">Download</span>
-							<a class="typeface-info__link"
-								href="https://fonts.google.com/specimen/IBM+Plex+Sans?sidebar.open=&selection.family=IBM+Plex+Sans:wght@400;600"
-								rel="nofollow noopener" target="_blank">bit.ly/revkit-ibm-plex</a>
+							<a class="typeface-info__link" href="https://fonts.google.com/specimen/IBM+Plex+Sans?sidebar.open=&selection.family=IBM+Plex+Sans:wght@400;600" rel="nofollow noopener" target="_blank">bit.ly/revkit-ibm-plex</a>
 						</div>
 					</div>
 				</div>
@@ -327,28 +350,24 @@
 						<div class="form-group">
 							<div class="form-group__input">
 								<label class="label" for="input-placeholder">Label</label>
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-									placeholder="Placeholder" id="input-placeholder" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Placeholder" id="input-placeholder" class="input">
 								<div class="error-message">Validation error message.</div>
 							</div>
 							<div class="form-group__input">
 								<label class="label" for="input-value">Label</label>
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="input-value"
-									value="Value" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="input-value" value="Value" class="input">
 								<div class="success-message">Validation success message.</div>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="form-group__input">
 								<label class="label" for="input-focus">Label</label>
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-									placeholder="Value" id="input-focus" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Value" id="input-focus" class="input">
 								<div class="error-message">Validation error message.</div>
 							</div>
 							<div class="form-group__input">
 								<label class="label" for="input-disabled">Label</label>
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Value"
-									id="input-disabled" class="input" disabled>
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Value" id="input-disabled" class="input" disabled>
 								<div class="error-message">Validation error message.</div>
 							</div>
 						</div>
@@ -356,23 +375,20 @@
 							<div class="form-group__input">
 								<label class="label" for="input-search">Label</label>
 								<div class="input-wrapper input-wrapper--search">
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-										placeholder="Placeholder" id="input-search" class="input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Placeholder" id="input-search" class="input">
 								</div>
 							</div>
 							<div class="form-group__input">
 								<label class="label" for="input-chevron">Label</label>
 								<div class="input-wrapper input-wrapper--chevron">
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" value="Value"
-										id="input-chevron" class="input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" value="Value" id="input-chevron" class="input">
 								</div>
 								<div class="success-message">Validation success message.</div>
 							</div>
 							<div class="form-group__input">
 								<label class="label" for="input-alert">Label</label>
 								<div class="input-wrapper input-wrapper--alert _form-focus">
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-										placeholder="Placeholder" id="input-alert" class="input _form-focus">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Placeholder" id="input-alert" class="input _form-focus">
 								</div>
 								<div class="error-message">Validation error message.</div>
 							</div>
@@ -420,28 +436,24 @@
 						<div class="form-group-textarea">
 							<div class="form-group__textarea">
 								<label class="label" for="textarea-placeholder">Label</label>
-								<textarea autocomplete="off" name="form[]" placeholder="Value" id="textarea-placeholder" data-error="Ошибка"
-									class="textarea"></textarea>
+								<textarea autocomplete="off" name="form[]" placeholder="Value" id="textarea-placeholder" data-error="Ошибка" class="textarea"></textarea>
 								<div class="error-message">Validation error message.</div>
 							</div>
 							<div class="form-group__textarea">
 								<label class="label" for="textarea-value">Label</label>
-								<textarea autocomplete="off" name="form[]" data-error="Ошибка" id="textarea-value"
-									class="textarea">Value</textarea>
+								<textarea autocomplete="off" name="form[]" data-error="Ошибка" id="textarea-value" class="textarea">Value</textarea>
 								<div class="error-message">Validation error message.</div>
 							</div>
 						</div>
 						<div class="form-group-textarea">
 							<div class="form-group__textarea">
 								<label class="label" for="textarea-focus">Label</label>
-								<textarea autocomplete="off" name="form[]" placeholder="Value" data-error="Ошибка"
-									id="textarea-focus" class="textarea"></textarea>
+								<textarea autocomplete="off" name="form[]" placeholder="Value" data-error="Ошибка" id="textarea-focus" class="textarea"></textarea>
 								<div class="error-message">Validation error message.</div>
 							</div>
 							<div class="form-group__textarea">
 								<label class="label" for="textarea-disabled">Label</label>
-								<textarea autocomplete="off" name="form[]" placeholder="Value" data-error="Ошибка"
-									id="textarea-disabled" class="textarea" disabled></textarea>
+								<textarea autocomplete="off" name="form[]" placeholder="Value" data-error="Ошибка" id="textarea-disabled" class="textarea" disabled></textarea>
 								<div class="error-message">Validation error message.</div>
 							</div>
 						</div>
@@ -471,69 +483,51 @@
 							<div class="form-group__checked">
 								<div class="checkbox">
 									<input id="checkbox-1" data-error="Ошибка" class="checkbox__input" type="checkbox">
-									<label for="checkbox-1" class="checkbox__label"><span
-											class="checkbox__text">Label</span></label>
+									<label for="checkbox-1" class="checkbox__label"><span class="checkbox__text">Label</span></label>
 								</div>
 								<div class="checkbox">
-									<input id="checkbox-2" data-error="Ошибка" class="checkbox__input checkbox__input--checked"
-										type="checkbox" name="form[]" checked>
-									<label for="checkbox-2" class="checkbox__label"><span
-											class="checkbox__text">Label</span></label>
+									<input id="checkbox-2" data-error="Ошибка" class="checkbox__input checkbox__input--checked" type="checkbox" name="form[]" checked>
+									<label for="checkbox-2" class="checkbox__label"><span class="checkbox__text">Label</span></label>
 								</div>
 								<div class="checkbox">
-									<input id="checkbox-3" data-error="Ошибка" class="checkbox__input checkbox__input--minus"
-										type="checkbox" name="form[]" checked>
-									<label for="checkbox-3" class="checkbox__label"><span
-											class="checkbox__text">Label</span></label>
+									<input id="checkbox-3" data-error="Ошибка" class="checkbox__input checkbox__input--minus" type="checkbox" name="form[]" checked>
+									<label for="checkbox-3" class="checkbox__label"><span class="checkbox__text">Label</span></label>
 								</div>
 							</div>
 							<div class="form-group__checked form-group--disabled">
 								<div class="checkbox">
 									<input id="checkbox-4" data-error="Ошибка" class="checkbox__input" type="checkbox">
-									<label for="checkbox-4" class="checkbox__label"><span
-											class="checkbox__text">Label</span></label>
+									<label for="checkbox-4" class="checkbox__label"><span class="checkbox__text">Label</span></label>
 								</div>
 								<div class="checkbox">
-									<input id="checkbox-5" data-error="Ошибка" class="checkbox__input checkbox__input--checked"
-										type="checkbox" name="form[]" checked>
-									<label for="checkbox-5" class="checkbox__label"><span
-											class="checkbox__text">Label</span></label>
+									<input id="checkbox-5" data-error="Ошибка" class="checkbox__input checkbox__input--checked" type="checkbox" name="form[]" checked>
+									<label for="checkbox-5" class="checkbox__label"><span class="checkbox__text">Label</span></label>
 								</div>
 								<div class="checkbox">
-									<input id="checkbox-6" data-error="Ошибка" class="checkbox__input checkbox__input--minus"
-										type="checkbox" name="form[]" checked>
-									<label for="checkbox-6" class="checkbox__label"><span
-											class="checkbox__text">Label</span></label>
+									<input id="checkbox-6" data-error="Ошибка" class="checkbox__input checkbox__input--minus" type="checkbox" name="form[]" checked>
+									<label for="checkbox-6" class="checkbox__label"><span class="checkbox__text">Label</span></label>
 								</div>
 							</div>
 						</div>
 						<div class="form-group-options">
 							<div class="form-group__options">
 								<div class="options__item">
-									<input hidden id="options__el-1" class="options__input" type="radio" value="1"
-										name="option-focus">
-									<label for="options__el-1" class="options__label"><span
-											class="options__text">Label</span></label>
+									<input hidden id="options__el-1" class="options__input" type="radio" value="1" name="option-focus">
+									<label for="options__el-1" class="options__label"><span class="options__text">Label</span></label>
 								</div>
 								<div class="options__item">
-									<input hidden id="options__el-2" class="options__input" type="radio" value="2"
-										name="option-focus" checked>
-									<label for="options__el-2" class="options__label"><span
-											class="options__text">Label</span></label>
+									<input hidden id="options__el-2" class="options__input" type="radio" value="2" name="option-focus" checked>
+									<label for="options__el-2" class="options__label"><span class="options__text">Label</span></label>
 								</div>
 							</div>
 							<div class="form-group__options ">
 								<div class="options__item form-group--disabled">
-									<input hidden id="options__el-3" class="options__input" type="radio" value="3"
-										name="option-disabled">
-									<label for="options__el-3" class="options__label"><span
-											class="options__text">Label</span></label>
+									<input hidden id="options__el-3" class="options__input" type="radio" value="3" name="option-disabled">
+									<label for="options__el-3" class="options__label"><span class="options__text">Label</span></label>
 								</div>
 								<div class="options__item form-group--disabled">
-									<input hidden id="options__el-4" class="options__input" type="radio" value="4"
-										name="option-disabled" checked>
-									<label for="options__el-4" class="options__label"><span
-											class="options__text">Label</span></label>
+									<input hidden id="options__el-4" class="options__input" type="radio" value="4" name="option-disabled" checked>
+									<label for="options__el-4" class="options__label"><span class="options__text">Label</span></label>
 								</div>
 							</div>
 						</div>
@@ -579,108 +573,102 @@
 						</div>
 						<div class="form-group-tag">
 							<div class="form-group__tag">
-								<button type="button" class="button-tag button-tag--muted">Label<i
-										class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--primary">Label<i
-										class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--accent">Label<i
-										class="button-tag__close _icon-close image.png"></i></button>
-								<button type="button" class="button-tag button-tag--warning">Label<i
-										class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--success">Label<i
-										class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--error">Label<i
-										class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--muted">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--primary">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--accent">Label<i class="button-tag__close _icon-close image.png"></i></button>
+								<button type="button" class="button button-tag button-tag--warning">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--success">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--error">Label<i class="button-tag__close _icon-close"></i></button>
 							</div>
 						</div>
 						<div class="form-group-button button-group">
 							<div class="button-group__container">
-								<div class="button-group__wrapper button--bright button-small">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--bright button--size--small">Button</button>
+									<button type="submit" class="button button--color--bright button--size--small button--hover">Button</button>
+									<button type="submit" class="button button--color--bright button--size--small button--pressed">Button</button>
+									<button type="submit" class="button button--color--bright button--size--small form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--accent button-small">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--accent button--size--small">Button</button>
+									<button type="submit" class="button button--color--accent button--size--small button--hover">Button</button>
+									<button type="submit" class="button button--color--accent button--size--small button--pressed">Button</button>
+									<button type="submit" class="button button--color--accent button--size--small form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--ghost button-small">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
-								</div>
-							</div>
-							<div class="button-group__container">
-								<div class="button-group__wrapper button--bright button-medium">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
-								</div>
-								<div class="button-group__wrapper button--accent button-medium">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
-								</div>
-								<div class="button-group__wrapper button--ghost button-medium">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--ghost button--size--small">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--small button--hover">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--small button--pressed">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--small form-group--disabled" disabled>Button</button>
 								</div>
 							</div>
 							<div class="button-group__container">
-								<div class="button-group__wrapper button--bright button-large">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--bright button--size--medium">Button</button>
+									<button type="submit" class="button button--color--bright button--size--medium button--hover">Button</button>
+									<button type="submit" class="button button--color--bright button--size--medium button--pressed">Button</button>
+									<button type="submit" class="button button--color--bright button--size--medium form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--accent button-large">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--accent button--size--medium">Button</button>
+									<button type="submit" class="button button--color--accent button--size--medium button--hover">Button</button>
+									<button type="submit" class="button button--color--accent button--size--medium button--pressed">Button</button>
+									<button type="submit" class="button button--color--accent button--size--medium form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--ghost button-large">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--ghost button--size--medium">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--medium button--hover">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--medium button--pressed">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--medium form-group--disabled" disabled>Button</button>
+								</div>
+							</div>
+							<div class="button-group__container">
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--bright button--size--large">Button</button>
+									<button type="submit" class="button button--color--bright button--size--large button--hover">Button</button>
+									<button type="submit" class="button button--color--bright button--size--large button--pressed">Button</button>
+									<button type="submit" class="button button--color--bright button--size--large form-group--disabled" disabled>Button</button>
+								</div>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--accent button--size--large">Button</button>
+									<button type="submit" class="button button--color--accent button--size--large button--hover">Button</button>
+									<button type="submit" class="button button--color--accent button--size--large button--pressed">Button</button>
+									<button type="submit" class="button button--color--accent button--size--large form-group--disabled" disabled>Button</button>
+								</div>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--ghost button--size--large">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--large button--hover">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--large button--pressed">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--large form-group--disabled" disabled>Button</button>
 								</div>
 							</div>
 						</div>
 					</form>
 					<div class="alert">
-							<div class="alert-block alert-block--tint">
-								A bright alert flash for dark backgrounds, which never lose the contrast.
-								<span class="close-alert _icon-close"></span>
-							</div>
-							<div class="alert-block alert-block--primary">
-								A dark alert flash for bright backgrounds, which never lose the contrast.
-								<span class="close-alert _icon-close"></span>
-							</div>
-							<div class="alert-block alert-block--accent">
-								A primary alert flash that looks pretty nice.
-								<span class="close-alert _icon-close"></span>
-							</div>
-							<div class="alert-block alert-block--warning">
-								A warning alert flash that never sucks.
-								<span class="close-alert _icon-close"></span>
-							</div>
-							<div class="alert-block alert-block--success">
-								A success alert flash, which never lose the contrast.
-								<span class="close-alert _icon-close"></span>
-							</div>
-							<div class="alert-block alert-block--error">
-								An error alert flash that nobody loves.
-								<span class="close-alert _icon-close"></span>
-							</div>
+						<div class="alert-block alert-block--tint">
+							A bright alert flash for dark backgrounds, which never lose the contrast.
+							<span class="close-alert _icon-close"></span>
+						</div>
+						<div class="alert-block alert-block--primary">
+							A dark alert flash for bright backgrounds, which never lose the contrast.
+							<span class="close-alert _icon-close"></span>
+						</div>
+						<div class="alert-block alert-block--accent">
+							A primary alert flash that looks pretty nice.
+							<span class="close-alert _icon-close"></span>
+						</div>
+						<div class="alert-block alert-block--warning">
+							A warning alert flash that never sucks.
+							<span class="close-alert _icon-close"></span>
+						</div>
+						<div class="alert-block alert-block--success">
+							A success alert flash, which never lose the contrast.
+							<span class="close-alert _icon-close"></span>
+						</div>
+						<div class="alert-block alert-block--error">
+							An error alert flash that nobody loves.
+							<span class="close-alert _icon-close"></span>
+						</div>
 					</div>
 					<div class="progress">
 						<div class="progress-bar">
@@ -754,7 +742,7 @@
 							<li class="chat__item chat__item--error">
 								<p class="chat__message">Chat Message</p>
 								<div class="point point-left-bottom"></div>
-							</li> 
+							</li>
 						</ul>
 						<ul class="chat__items">
 							<li class="chat__item chat__item--normal">
@@ -772,7 +760,7 @@
 							<li class="chat__item chat__item--error">
 								<p class="chat__message chat__message--error">Chat Message</p>
 								<div class="point point-right-bottom"></div>
-							</li> 
+							</li>
 						</ul>
 						<ul class="chat__items">
 							<li class="chat__item chat__item--normal">
@@ -790,7 +778,7 @@
 							<li class="chat__item chat__item--error">
 								<p class="chat__message chat__message--error">Chat Message</p>
 								<div class="point point-left-top"></div>
-							</li> 
+							</li>
 						</ul>
 						<ul class="chat__items">
 							<li class="chat__item chat__item--normal">
@@ -808,7 +796,7 @@
 							<li class="chat__item chat__item--error">
 								<p class="chat__message">Chat Message</p>
 								<div class="point point-right-top"></div>
-							</li> 
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -1015,131 +1003,275 @@
 				<div class="misc__container">
 					<h2 class="misc__title title"><span class="title__number">10. </span>Misc</h2>
 					<div class="misc__wrapper">
-					<ul class="misc__items">
-						<li class="misc__item"><i class="misc__left _icon-check"></i>List item goes here</li>
-						<li class="misc__item"><i class="misc__left _icon-close"></i>List item goes here</li>
-						<li class="misc__item"><i class="misc__left _icon-bullet"></i>List item goes here</li>
-						<li class="misc__item"><i class="misc__left _icon-circle"></i>List item goes here</li>
-						<li class="misc__item"><i class="misc__left _icon-square"></i>List item goes here</li>
-					</ul>
-					<ul class="misc__items">
-						<li class="misc__item">List item goes here<i class="misc__right _icon-check"></i></li>
-						<li class="misc__item">List item goes here<i class="misc__right _icon-close"></i></li>
-					</ul>
-					<div class="misc__items">
-						<div class="rating rating_set">
-							<div class="rating__body">
-								<div class="rating__active"></div>
-								<div class="rating__items">
-									<input type="radio" class="rating__item" value="1" name="rating">
-									<input type="radio" class="rating__item" value="2" name="rating">
-									<input type="radio" class="rating__item" value="3" name="rating">
-									<input type="radio" class="rating__item" value="4" name="rating">
-									<input type="radio" class="rating__item" value="5" name="rating">
+						<ul class="misc__items">
+							<li class="misc__item"><i class="misc__left _icon-check"></i>List item goes here</li>
+							<li class="misc__item"><i class="misc__left _icon-close"></i>List item goes here</li>
+							<li class="misc__item"><i class="misc__left _icon-bullet"></i>List item goes here</li>
+							<li class="misc__item"><i class="misc__left _icon-circle"></i>List item goes here</li>
+							<li class="misc__item"><i class="misc__left _icon-square"></i>List item goes here</li>
+						</ul>
+						<ul class="misc__items">
+							<li class="misc__item">List item goes here<i class="misc__right _icon-check"></i></li>
+							<li class="misc__item">List item goes here<i class="misc__right _icon-close"></i></li>
+						</ul>
+						<div class="misc__items">
+							<div class="rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
 								</div>
+								<div class="rating__value">4.0</div>
 							</div>
-							<div class="rating__value">4.0</div>
+							<p class="rating__desc">based on 8 ratings</p>
 						</div>
-						<p class="rating__desc">based on 8 ratings</p>
-					</div>
 					</div>
 				</div>
-			</section> 
-		 <section class="typescale">
+			</section>
+			<section class="typescale">
 				<div class="typescale__container">
 					<h2 class="typescale__title title"><span class="title__number">11. </span>Type Scale</h2>
 					<div class="typescale__wrapper">
 						<ul class="typescale__items typescale__items--primary">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 						<ul class="typescale__items typescale__items--secondary">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 						<ul class="typescale__items typescale__items--muted">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 						<ul class="typescale__items typescale__items--accent">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 						<ul class="typescale__items typescale__items--warning">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 						<ul class="typescale__items typescale__items--success">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 						<ul class="typescale__items typescale__items--error">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 						<ul class="typescale__items typescale__items--normal">
-							<li class="typescale__item"><h1 class="typescale__heading heading-x1">Heading X1</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x2">Heading X2</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x3">Heading X3</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x4">Heading X4</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x5">Heading X5</h1></li>
-							<li class="typescale__item"><h1 class="typescale__heading heading-x6">Heading X6</h1></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x1">paragraph X1</p></li>
-							<li class="typescale__item"><p class="typescale__paragraph paragraph-x2">paragraph X2</p></li>
-							<li class="typescale__item"><p class="typescale__label">Label</p></li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x1">Heading X1</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x2">Heading X2</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x3">Heading X3</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x4">Heading X4</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x5">Heading X5</h1>
+							</li>
+							<li class="typescale__item">
+								<h1 class="typescale__heading heading-x6">Heading X6</h1>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x1">paragraph X1</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__paragraph paragraph-x2">paragraph X2</p>
+							</li>
+							<li class="typescale__item">
+								<p class="typescale__label">Label</p>
+							</li>
 						</ul>
 					</div>
 				</div>
-			</section>  -->
+			</section>
 			<section class="headers">
 				<div class="headers__container">
 					<h2 class="headers__title title"><span class="title__number">12. </span>Headers</h2>
@@ -1151,24 +1283,23 @@
 								</div>
 								<div class="menu-body">
 									<div class="overlay"></div>
-									<nav class="menu" id="menu">
+									<nav class="menu menu-demo" id="menu">
 										<div class="menu-mobile-header">
 											<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
 										</div>
 										<ul class="menu-list">
-											<li class="menu-item menu-item-home"><a href="#" class="menu-link" data-goto=".header">Home</a></li>
-											<li class="menu-item"><a href="#" class="menu-link" data-goto=".impact">Styleguide</a></li>
-											<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Controls</a></li>
-											<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Elements</a></li>
-											<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Components</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
 										</ul>
 									</nav>
 									<button type="button" class="menu-mobile-toggle _icon-burger"><span>Menu</span></button>
 								</div>
 							</div>
-							<div data-da=".menu, 767.98" class="fullpage__buttons button-small">
-								<div class="button--bright"><button type="submit" class="button">Button</button></div>
-								<div class="button--accent"><button type="submit" class="button">Button</button></div>
+							<div data-da=".menu-demo, 767.98" class="fullpage__buttons">
+								<button type="submit" class="button button--color--bright button--size--small">Button</button>
+								<button type="submit" class="button button--color--accent button--size--small">Button</button>
 							</div>
 						</div>
 						<div class="headers__row">
@@ -1184,14 +1315,13 @@
 												<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
 											</div>
 											<ul class="menu-list">
-												<li class="menu-item menu-item-home"><a href="#" class="menu-link" data-goto=".header">Home</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".impact">Styleguide</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Controls</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Elements</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Components</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
 											</ul>
 										</nav>
-										<button type="button" class="menu-mobile-toggle tablet--active _icon-burger"><span>Menu</span></button>
+										<button type="button" class="menu-mobile-toggle menu-mobile-toggle--disabled tablet--active _icon-burger"><span>Menu</span></button>
 									</div>
 								</div>
 							</div>
@@ -1207,14 +1337,13 @@
 												<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
 											</div>
 											<ul class="menu-list">
-												<li class="menu-item menu-item-home"><a href="#" class="menu-link" data-goto=".header">Home</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".impact">Styleguide</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Controls</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Elements</a></li>
-												<li class="menu-item"><a href="#" class="menu-link" data-goto=".customers">Components</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
 											</ul>
 										</nav>
-										<button type="button" class="menu-mobile-toggle tablet--active _icon-burger"><span>Menu</span></button>
+										<button type="button" class="menu-mobile-toggle menu-mobile-toggle--disabled tablet--active _icon-burger"><span>Menu</span></button>
 									</div>
 								</div>
 							</div>
@@ -1222,7 +1351,7 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section class="flaps">
+			<section class="flaps">
 				<div class="flaps__container">
 					<h2 class="flaps__title title"><span class="title__number">13. </span>Flaps</h2>
 					<div class="flaps__wrapper">
@@ -1231,7 +1360,7 @@
 								<h4 class="flap-desc__subtitle">Context Label</h4>
 								<h3 class="flap-desc__title">Hero Title</h3>
 								<p class="flap-desc__text">A quick supportive, and easy to understand catchphrase, slogan, tagline, or the punchline of the brand.</p>
-								<div class="flap-desc__button button--accent"><button type="submit" class="flap-button button">Call to Action</button></div>
+								<div class="flap-desc__button"><button type="submit" class="button button--color--accent button--size--flap">Call to Action</button></div>
 							</div>
 							<div class="flap-one__image"><img src="img/flaps/hero1.svg" alt="Image hero"></div>
 						</div>
@@ -1239,7 +1368,7 @@
 							<div class="flap-two__desc flap-desc">
 								<h3 class="flap-desc__title">Hero Title</h3>
 								<p class="flap-desc__text">A quick supportive, and easy to understand catchphrase, slogan, tagline, or the punchline of the brand.</p>
-								<div class="flap-desc__button button--accent"><button type="submit" class="flap-button button">Call to Action</button></div>
+								<div class="flap-desc__button"><button type="submit" class="button button--color--accent button--size--flap">Call to Action</button></div>
 							</div>
 							<div class="flap-two__image"><img src="img/flaps/hero2.svg" alt="Image hero"></div>
 						</div>
@@ -1247,7 +1376,7 @@
 							<div class="flap-three__desc flap-desc">
 								<h3 class="flap-desc__title">Hero Title</h3>
 								<p class="flap-desc__text">A quick supportive, and easy to understand catchphrase, slogan, tagline, or the punchline of the brand.</p>
-								<div class="flap-desc__button button--accent"><button type="submit" class="flap-button button">Call to Action</button></div>
+								<div class="flap-desc__button"><button type="submit" class="button button--color--accent button--size--flap">Call to Action</button></div>
 							</div>
 							<div class="flap-three__image"><img src="img/flaps/hero2.svg" alt="Image hero"></div>
 						</div>
@@ -1293,10 +1422,10 @@
 								<p class="grid-item__text">Supportive text and the essential context goes here.</p>
 							</div>
 						</div>
+					</div>
 				</div>
-			</div>
 			</section>
-			 <section class="modals">
+			<section class="modals">
 				<div class="modals__container">
 					<h2 class="modals__title title"><span class="title__number">14. </span>Modals</h2>
 					<div class="modals__wrapper">
@@ -1304,92 +1433,92 @@
 							<span class="close-modal _icon-close"></span>
 							<h3 class="modal-item__title">Modal Title</h3>
 							<p class="modal-item__text">Left aligned contextual description for modal.</p>
-							<div class="modal-item__buttons button--accent button-medium">
-								<button type="submit" class="button">Action</button>
+							<div class="modal-item__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="modal-item">
 							<span class="close-modal _icon-close"></span>
 							<h3 class="modal-item__title">Modal Title</h3>
 							<p class="modal-item__text">Left aligned contextual description for modal.</p>
-							<div class="modal-item__buttons modal-item__buttons--center button-medium">
-								<button type="submit" class="button">Cancel</button>
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
+							<div class="modal-item__buttons modal-item__buttons--center">
+								<button type="submit" class="button button--size--medium">Cancel</button>
+								<button type="submit" class="button button--size--medium button--color--accent">Action</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section> 
-			 <section class="callouts">
+			</section>
+			<section class="callouts">
 				<div class="callouts__container">
 					<h2 class="callouts__title title"><span class="title__number">15. </span>Callouts</h2>
 					<div class="callouts__wrapper">
 						<div class="callout-item">
 							<h3 class="callout-item__title">Callout Title</h3>
 							<p class="callout-item__text">Supportive text for the callout goes here like a pro, which informs and helps users decide what they should do next.</p>
-							<div class="callout-item__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-item__buttons ">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="callout-item callout-item--disabled">
 							<h3 class="callout-item__title">Callout Title</h3>
 							<p class="callout-item__text">Supportive text for the callout goes here like a pro, which informs and helps users decide what they should do next.</p>
-							<div class="callout-item__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-item__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="callout-row callout-row--disabled">
 							<p class="callout-row__text">Supportive text for the callout.</p>
-							<div class="callout-row__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-row__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="callout-row">
 							<p class="callout-row__text">Supportive text for the callout.</p>
-							<div class="callout-row__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-row__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section> 
-			 <section class="charts">
+			</section>
+			<section class="charts">
 				<div class="charts__container">
 					<h2 class="charts__title title"><span class="title__number">16. </span>Charts</h2>
 					<div class="charts__wrapper">
 						<div class="bar">
 							<h3 class="bar__chartname">Bar Chart</h3>
 							<h4 class="bar__title">443K Pageviews</h4>
-								<p class="bar__subtitle">in last 7 days</p>
+							<p class="bar__subtitle">in last 7 days</p>
 							<div class="chartBox">
 								<canvas id="barChart"></canvas>
-							 </div>
+							</div>
 						</div>
 						<div class="bar">
 							<h3 class="bar__chartname">Line Chart</h3>
 							<h4 class="bar__title">984 Signups</h4>
-								<p class="bar__subtitle">in last 7 days</p>
+							<p class="bar__subtitle">in last 7 days</p>
 							<div class="chartBox">
 								<canvas id="lineChart"></canvas>
-							 </div>
+							</div>
 						</div>
 						<div class="bar">
 							<h3 class="bar__chartname">Donut Chart</h3>
 							<h4 class="bar__title">Sale Channels</h4>
-								<p class="bar__subtitle">in last 7 days</p>
+							<p class="bar__subtitle">in last 7 days</p>
 							<div class="chartBox chartBox__donut">
 								<canvas id="donutChart"></canvas>
-							 </div>
-							 <p class="bar__desc">Mobile and Web Channels are performing better.</p>
+							</div>
+							<p class="bar__desc">Mobile and Web Channels are performing better.</p>
 						</div>
 					</div>
 				</div>
-			</section> 
-			 <section class="cards">
+			</section>
+			<section class="cards">
 				<div class="cards__container">
 					<h2 class="cards__title title"><span class="title__number">17. </span>Cards</h2>
 					<div class="cards__wrapper">
@@ -1398,7 +1527,7 @@
 								<div class="card-generic__image"><picture><source srcset="img/cards/card-short.webp" type="image/webp"><img src="img/cards/card-short.jpg" alt="card picture"></picture></div>
 								<h3 class="card-generic__title card-item__title">Card Title</h3>
 								<p class="card-generic__text card-item__text">Supporting description for the card goes here like a breeze.</p>
-								<div class="button-medium"><button type="submit" class="button">Action</button></div>
+								<button type="submit" class="button button--size--medium">Action</button>
 							</div>
 							<div class="card-fill card-item">
 								<h3 class="card-fill__title card-item__title">Card Title</h3>
@@ -1407,7 +1536,7 @@
 							<div class="card-text card-item">
 								<h3 class="card-text__title card-item__title">Card Title</h3>
 								<p class="card-text__text card-item__text">Supporting description for the card goes here like a breeze.</p>
-								<div class="button-medium"><button type="submit" class="button">Action</button></div>
+								<button type="submit" class="button button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="cards__grid">
@@ -1437,9 +1566,9 @@
 								<p class="grid-card__text card-item__text">Supporting description for the card goes here.</p>
 							</div>
 						</div>
+					</div>
 				</div>
-			</div>
-			</section> 
+			</section>
 			<section class="forms">
 				<div class="forms__container">
 					<h2 class="forms__title title"><span class="title__number">18. </span>Forms</h2>
@@ -1451,14 +1580,16 @@
 								<fieldset class="form__wrapper">
 									<div class="form__input">
 										<label class="form__label" for="contact-name">Name</label>
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="contact-name" class="input"></div>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="contact-name" class="input">
+									</div>
 									<div class="form__input">
 										<label class="form__label" for="contact-email">Email</label>
-										<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" id="contact-email" class="input"></div>
+										<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" id="contact-email" class="input">
+									</div>
 									<div class="form__textarea">
 										<textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка" class="textarea textarea-contact"></textarea>
 									</div>
-									<div class="button--accent button-medium"><button type="submit" class="button">Send Message</button></div>
+									<button type="submit" class="button button--color--accent button--size--medium">Send Message</button>
 								</fieldset>
 							</form>
 						</div>
@@ -1470,11 +1601,13 @@
 								<fieldset class="form__wrapper">
 									<div class="form__input">
 										<label class="form__label" for="signin-email">Email</label>
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="signin-email" class="input"></div>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="signin-email" class="input">
+									</div>
 									<div class="form__input">
 										<label class="form__label" for="signin-password">Password</label>
-										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" id="signin-password" class="input"></div>
-									<div class="button--accent button-medium "><button type="submit" class="form-signin__button button">Sign In</button></div>
+										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" id="signin-password" class="input">
+									</div>
+									<button type="submit" class="form-signin__button button button--color--accent button--size--medium">Sign In</button>
 									<a href="#" class="form__forgot">Forgot password?</a>
 								</fieldset>
 							</form>
@@ -1485,18 +1618,21 @@
 								<fieldset class="form__wrapper">
 									<div class="form__input">
 										<label class="form__label" for="create-fullname">Full Name</label>
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="create-fullname" class="input"></div>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="create-fullname" class="input">
+									</div>
 									<div class="form__input">
 										<label class="form__label" for="create-email">Email</label>
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="create-email" class="input"></div>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="create-email" class="input">
+									</div>
 									<div class="form__input">
 										<label class="form__label" for="create-password">Password</label>
-										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" id="create-password" class="input"></div>
+										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" id="create-password" class="input">
+									</div>
 									<div class="checkbox">
 										<input id="checkbox-create" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 										<label for="checkbox-create" class="checkbox__label"><span class="checkbox__text">By signing up, I agree to the terms.</span></label>
 									</div>
-									<div class="button--accent button-medium "><button type="submit" class="form-signin__button button">Sign Up</button></div>
+									<button type="submit" class="form-signin__button button button--color--accent button--size--medium">Sign Up</button>
 								</fieldset>
 							</form>
 							<form action="#" class="form form-reset">
@@ -1506,19 +1642,19 @@
 								<fieldset class="form__wrapper">
 									<div class="form__input">
 										<label class="form__label" for="input-name">Email</label>
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="input-name" class="input"></div>
-									<div class="button--accent button-medium "><button type="submit" class="form-signin__button button">Send Reset Link</button></div>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="input-name" class="input">
+									</div>
+									<button type="submit" class="form-signin__button button button--color--accent button--size--medium">Send Reset Link</button>
 									<a href="#" class="form__forgot">Back to Sign in</a>
 								</fieldset>
 							</form>
 						</div>
 					</div>
 				</div>
-			</section>  -->
+			</section>
 		</main>
 	</div>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js?_v=20220703163639"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220703163639"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220704223205"></script>
 	<script>
 		const barData = {
 			labels: [
@@ -1762,7 +1898,7 @@
 		const lineChart = new Chart(document.getElementById('lineChart'), lineConfig);
 		const donutChart = new Chart(document.getElementById('donutChart'), donutConfig);
 	</script>
-	<script src="js/app.min.js?_v=20220703163639"></script>
+	<script src="js/app.min.js?_v=20220704223205"></script>
 
 
 </body>
