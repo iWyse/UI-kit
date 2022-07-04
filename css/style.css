@@ -1668,6 +1668,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .mobile {
@@ -1679,11 +1680,16 @@ body {
   width: 100%;
 }
 
+.mobile .menu-body {
+  position: relative;
+}
+
 .mobile .menu-body .menu-list {
   display: none;
 }
 
 .mobile .menu-body .menu-mobile-toggle {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1874,7 +1880,7 @@ body {
   }
 }
 
-.flap-button {
+.button--size--flap {
   max-height: 57px;
   padding: 18px 42px;
   min-width: 180px;
@@ -2483,6 +2489,35 @@ body {
   border-radius: 6px;
 }
 
+.navigation {
+  margin-top: 1.25rem;
+}
+
+.navigation--fixed {
+  position: fixed;
+  z-index: 55;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+}
+
+.navigation__items {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  padding: 30px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .button {
   color: #7C9CBF;
   font-weight: 500;
@@ -2544,51 +2579,51 @@ body {
   font-size: 20px;
 }
 
-.button-small .button {
+.button--size--small {
   min-width: 100px;
   min-height: 34px;
   border-radius: 3px;
   font-size: 0.875rem;
 }
 
-.button-medium .button {
+.button--size--medium {
   min-width: 140px;
   min-height: 48px;
 }
 
-.button-large .button {
+.button--size--large {
   min-width: 180px;
   min-height: 56px;
 }
 
-.button--bright.button--hover {
+.button--color--bright.button--hover {
   outline-color: #0880AE;
 }
 
-.button--bright .button--pressed {
+.button--color--bright.button--pressed {
   outline: 2px solid #0880AE;
 }
 
-.button--accent .button {
+.button--color--accent {
   background-color: #0880AE;
   color: #EBF4F8;
 }
 
-.button--accent .button--pressed {
+.button--color--accent.button--pressed {
   outline: 2px solid #2C2738;
 }
 
-.button--ghost .button {
+.button--color--ghost {
   color: #0880AE;
   background-color: transparent;
   outline: 2px solid #7C9CBF;
 }
 
-.button--ghost .button--hover {
+.button--color--ghost.button--hover {
   outline-color: #0880AE;
 }
 
-.button--ghost .button--pressed {
+.button--color--ghost.button--pressed {
   outline-color: #756F86;
 }
 
@@ -3609,7 +3644,6 @@ a:focus-visible,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 90;
 }
 
 .menu-body .menu-list {
@@ -3651,9 +3685,9 @@ a:focus-visible,
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.5714285714;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3125;
   letter-spacing: 0.15px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3692,6 +3726,10 @@ a:focus-visible,
 }
 
 @media (min-width: 47.99875em) {
+  .menu-mobile-toggle--disabled {
+    pointer-events: none;
+  }
+
   .form-group {
     margin-bottom: 3rem;
   }
@@ -3907,6 +3945,14 @@ a:focus-visible,
     width: 100%;
   }
 
+  .fullpage__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 20px;
+  }
+
   .input {
     width: 360px;
   }
@@ -3963,10 +4009,9 @@ a:focus-visible,
   }
 
   .menu-body {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    z-index: 100;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .menu-body .menu-mobile-toggle {
@@ -3980,7 +4025,7 @@ a:focus-visible,
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 100%;
     z-index: 111;
     overflow-y: scroll;
@@ -4037,7 +4082,6 @@ a:focus-visible,
 
   .menu-body .menu .menu-list {
     display: block;
-    height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -4149,6 +4193,10 @@ a:focus-visible,
 
   .form-group__select {
     width: 100%;
+  }
+
+  .menu-mobile-toggle span {
+    display: none;
   }
 }
 
