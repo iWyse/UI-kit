@@ -5,7 +5,7 @@
 	<title>RevKit</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220701230217">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220705074221">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,6 +13,34 @@
 <body>
 	<div class="wrapper">
 		<main class="page">
+			<section class="navigation">
+				<div class="navigation__container">
+					<div class="navigation__wrapper">
+						<div class="navigation__menu">
+							<div class="navigation__items">
+								<div class="navigation__logo">
+									<h1><img src="img/logos/LogoDark.svg" alt="Dark logo"></h1>
+								</div>
+								<div class="menu-body">
+									<div class="overlay"></div>
+									<nav class="menu" id="menu">
+										<div class="menu-mobile-header">
+											<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
+										</div>
+										<ul class="menu-list">
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
+										</ul>
+									</nav>
+									<button type="button" class="menu-mobile-toggle _icon-burger"><span>Menu</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="typeface">
 				<div class="typeface__container">
 					<h2 class="typeface__title title"><span class="title__number">01. </span>Typeface</h2>
@@ -322,7 +350,7 @@
 					<form class="form-wrapper">
 						<div class="form-group">
 							<div class="form-group__input">
-								<label сlass="label" for="input-placeholder">Label</label>
+								<label class="label" for="input-placeholder">Label</label>
 								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Placeholder" id="input-placeholder" class="input">
 								<div class="error-message">Validation error message.</div>
 							</div>
@@ -335,7 +363,7 @@
 						<div class="form-group">
 							<div class="form-group__input">
 								<label class="label" for="input-focus">Label</label>
-								<input autofocus autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Value" id="input-focus" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Value" id="input-focus" class="input">
 								<div class="error-message">Validation error message.</div>
 							</div>
 							<div class="form-group__input">
@@ -546,73 +574,73 @@
 						</div>
 						<div class="form-group-tag">
 							<div class="form-group__tag">
-								<button type="button" class="button-tag button-tag--muted">Label<i class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--primary">Label<i class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--accent">Label<i class="button-tag__close _icon-close image.png"></i></button>
-								<button type="button" class="button-tag button-tag--warning">Label<i class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--success">Label<i class="button-tag__close _icon-close"></i></button>
-								<button type="button" class="button-tag button-tag--error">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--muted">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--primary">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--accent">Label<i class="button-tag__close _icon-close image.png"></i></button>
+								<button type="button" class="button button-tag button-tag--warning">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--success">Label<i class="button-tag__close _icon-close"></i></button>
+								<button type="button" class="button button-tag button-tag--error">Label<i class="button-tag__close _icon-close"></i></button>
 							</div>
 						</div>
 						<div class="form-group-button button-group">
 							<div class="button-group__container">
-								<div class="button-group__wrapper button--bright button-small">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--bright button--size--small">Button</button>
+									<button type="submit" class="button button--color--bright button--size--small button--hover">Button</button>
+									<button type="submit" class="button button--color--bright button--size--small button--pressed">Button</button>
+									<button type="submit" class="button button--color--bright button--size--small form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--accent button-small">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--accent button--size--small">Button</button>
+									<button type="submit" class="button button--color--accent button--size--small button--hover">Button</button>
+									<button type="submit" class="button button--color--accent button--size--small button--pressed">Button</button>
+									<button type="submit" class="button button--color--accent button--size--small form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--ghost button-small">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
-								</div>
-							</div>
-							<div class="button-group__container">
-								<div class="button-group__wrapper button--bright button-medium">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
-								</div>
-								<div class="button-group__wrapper button--accent button-medium">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
-								</div>
-								<div class="button-group__wrapper button--ghost button-medium">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--ghost button--size--small">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--small button--hover">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--small button--pressed">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--small form-group--disabled" disabled>Button</button>
 								</div>
 							</div>
 							<div class="button-group__container">
-								<div class="button-group__wrapper button--bright button-large">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--bright button--size--medium">Button</button>
+									<button type="submit" class="button button--color--bright button--size--medium button--hover">Button</button>
+									<button type="submit" class="button button--color--bright button--size--medium button--pressed">Button</button>
+									<button type="submit" class="button button--color--bright button--size--medium form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--accent button-large">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--accent button--size--medium">Button</button>
+									<button type="submit" class="button button--color--accent button--size--medium button--hover">Button</button>
+									<button type="submit" class="button button--color--accent button--size--medium button--pressed">Button</button>
+									<button type="submit" class="button button--color--accent button--size--medium form-group--disabled" disabled>Button</button>
 								</div>
-								<div class="button-group__wrapper button--ghost button-large">
-									<button type="submit" class="button">Button</button>
-									<button type="submit" class="button button--hover">Button</button>
-									<button type="submit" class="button button--pressed">Button</button>
-									<button type="submit" class="button form-group--disabled" disabled>Button</button>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--ghost button--size--medium">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--medium button--hover">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--medium button--pressed">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--medium form-group--disabled" disabled>Button</button>
+								</div>
+							</div>
+							<div class="button-group__container">
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--bright button--size--large">Button</button>
+									<button type="submit" class="button button--color--bright button--size--large button--hover">Button</button>
+									<button type="submit" class="button button--color--bright button--size--large button--pressed">Button</button>
+									<button type="submit" class="button button--color--bright button--size--large form-group--disabled" disabled>Button</button>
+								</div>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--accent button--size--large">Button</button>
+									<button type="submit" class="button button--color--accent button--size--large button--hover">Button</button>
+									<button type="submit" class="button button--color--accent button--size--large button--pressed">Button</button>
+									<button type="submit" class="button button--color--accent button--size--large form-group--disabled" disabled>Button</button>
+								</div>
+								<div class="button-group__wrapper">
+									<button type="submit" class="button button--color--ghost button--size--large">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--large button--hover">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--large button--pressed">Button</button>
+									<button type="submit" class="button button--color--ghost button--size--large form-group--disabled" disabled>Button</button>
 								</div>
 							</div>
 						</div>
@@ -1249,37 +1277,76 @@
 				<div class="headers__container">
 					<h2 class="headers__title title"><span class="title__number">12. </span>Headers</h2>
 					<div class="headers__wrapper">
-						<div class="headers__fullpage fullpage">
-							<div class="fullpage__items">
-								<div class="fullpage__logo"><a href="#"><img src="img/logos/LogoDark.svg" alt="Logo"></a></div>
-								<nav class="menu">
-									<ul class="menu-list">
-										<li class="menu-item"><a href="#" class="menu-link">Item</a></li>
-										<li class="menu-item"><a href="#" class="menu-link">Item</a></li>
-										<li class="menu-item"><a href="#" class="menu-link">Item</a></li>
-										<li class="menu-item"><a href="#" class="menu-link">Item</a></li>
-										<li class="menu-item"><a href="#" class="menu-link">Item</a></li>
-									</ul>
-								</nav>
+						<div class="headers__menu headers__fullpage fullpage">
+							<div class="headers__items">
+								<div class="headers__logo">
+									<img src="img/logos/LogoDark.svg" alt="Dark logo">
+								</div>
+								<div class="menu-body">
+									<div class="overlay"></div>
+									<nav class="menu menu-demo" id="menu-1">
+										<div class="menu-mobile-header">
+											<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
+										</div>
+										<ul class="menu-list">
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+											<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
+										</ul>
+									</nav>
+									<button type="button" class="menu-mobile-toggle _icon-burger"><span>Menu</span></button>
+								</div>
 							</div>
-							<div class="fullpage__button fullpage__button--fullpage"><button type="button" class="menu-mobile-toggle _icon-burger"></button><span>Menu</span></div>
-							<div class="fullpage__items fullpage__buttons  button-small">
-								<div class="button--bright"><button type="submit" class="button">Button</button></div>
-								<div class="button--accent"><button type="submit" class="button">Button</button></div>
+							<div data-da=".menu-demo, 767.98" class="fullpage__buttons">
+								<button type="submit" class="button button--color--bright button--size--small">Button</button>
+								<button type="submit" class="button button--color--accent button--size--small">Button</button>
 							</div>
 						</div>
 						<div class="headers__row">
-							<div class="headers__tablet tablet">
-								<div class="tablet__items">
-									<div class="tablet__logo"><a href="#"><img src="img/logos/LogoDark.svg" alt="Logo"></a></div>
+							<div class="headers__menu headers__tablet tablet">
+								<div class="headers__items">
+									<div class="headers__logo">
+										<img src="img/logos/LogoDark.svg" alt="Dark logo">
+									</div>
+									<div class="menu-body">
+										<div class="overlay"></div>
+										<nav class="menu" id="menu-2">
+											<div class="menu-mobile-header">
+												<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
+											</div>
+											<ul class="menu-list">
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
+											</ul>
+										</nav>
+										<button type="button" class="menu-mobile-toggle menu-mobile-toggle--disabled tablet--active _icon-burger"><span>Menu</span></button>
+									</div>
 								</div>
-								<div class="tablet__button"><button type="button" class="menu-mobile-toggle _icon-burger"></button><span>Menu</span></div>
 							</div>
-							<div class="headers__mobile mobile">
-								<div class="mobile__items">
-									<div class="mobile__logo"><a href="#"><img src="img/logos/LogoDark.svg" alt="Logo"></a></div>
+							<div class="headers__menu headers__mobile mobile">
+								<div class="headers__items">
+									<div class="headers__logo">
+										<img src="img/logos/LogoDark.svg" alt="Dark logo">
+									</div>
+									<div class="menu-body">
+										<div class="overlay"></div>
+										<nav class="menu" id="menu-3">
+											<div class="menu-mobile-header">
+												<button type="button" class="menu-mobile-close"><i class="ion _icon-close"></i></button>
+											</div>
+											<ul class="menu-list">
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".typeface">Styleguide</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".logos">Controls</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".headers">Elements</a></li>
+												<li class="menu-item"><a href="#" class="menu-link" data-goto=".charts">Components</a></li>
+											</ul>
+										</nav>
+										<button type="button" class="menu-mobile-toggle menu-mobile-toggle--disabled tablet--active _icon-burger"><span>Menu</span></button>
+									</div>
 								</div>
-								<div class="mobile__button"><button type="button" class="menu-mobile-toggle _icon-burger"></button><span>Menu</span></div>
 							</div>
 						</div>
 					</div>
@@ -1294,7 +1361,7 @@
 								<h4 class="flap-desc__subtitle">Context Label</h4>
 								<h3 class="flap-desc__title">Hero Title</h3>
 								<p class="flap-desc__text">A quick supportive, and easy to understand catchphrase, slogan, tagline, or the punchline of the brand.</p>
-								<div class="flap-desc__button button--accent"><button type="submit" class="flap-button button">Call to Action</button></div>
+								<div class="flap-desc__button"><button type="submit" class="button button--color--accent button--size--flap">Call to Action</button></div>
 							</div>
 							<div class="flap-one__image"><img src="img/flaps/hero1.svg" alt="Image hero"></div>
 						</div>
@@ -1302,7 +1369,7 @@
 							<div class="flap-two__desc flap-desc">
 								<h3 class="flap-desc__title">Hero Title</h3>
 								<p class="flap-desc__text">A quick supportive, and easy to understand catchphrase, slogan, tagline, or the punchline of the brand.</p>
-								<div class="flap-desc__button button--accent"><button type="submit" class="flap-button button">Call to Action</button></div>
+								<div class="flap-desc__button"><button type="submit" class="button button--color--accent button--size--flap">Call to Action</button></div>
 							</div>
 							<div class="flap-two__image"><img src="img/flaps/hero2.svg" alt="Image hero"></div>
 						</div>
@@ -1310,7 +1377,7 @@
 							<div class="flap-three__desc flap-desc">
 								<h3 class="flap-desc__title">Hero Title</h3>
 								<p class="flap-desc__text">A quick supportive, and easy to understand catchphrase, slogan, tagline, or the punchline of the brand.</p>
-								<div class="flap-desc__button button--accent"><button type="submit" class="flap-button button">Call to Action</button></div>
+								<div class="flap-desc__button"><button type="submit" class="button button--color--accent button--size--flap">Call to Action</button></div>
 							</div>
 							<div class="flap-three__image"><img src="img/flaps/hero2.svg" alt="Image hero"></div>
 						</div>
@@ -1367,17 +1434,17 @@
 							<span class="close-modal _icon-close"></span>
 							<h3 class="modal-item__title">Modal Title</h3>
 							<p class="modal-item__text">Left aligned contextual description for modal.</p>
-							<div class="modal-item__buttons button--accent button-medium">
-								<button type="submit" class="button">Action</button>
+							<div class="modal-item__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="modal-item">
 							<span class="close-modal _icon-close"></span>
 							<h3 class="modal-item__title">Modal Title</h3>
 							<p class="modal-item__text">Left aligned contextual description for modal.</p>
-							<div class="modal-item__buttons modal-item__buttons--center button-medium">
-								<button type="submit" class="button">Cancel</button>
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
+							<div class="modal-item__buttons modal-item__buttons--center">
+								<button type="submit" class="button button--size--medium">Cancel</button>
+								<button type="submit" class="button button--size--medium button--color--accent">Action</button>
 							</div>
 						</div>
 					</div>
@@ -1390,31 +1457,31 @@
 						<div class="callout-item">
 							<h3 class="callout-item__title">Callout Title</h3>
 							<p class="callout-item__text">Supportive text for the callout goes here like a pro, which informs and helps users decide what they should do next.</p>
-							<div class="callout-item__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-item__buttons ">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="callout-item callout-item--disabled">
 							<h3 class="callout-item__title">Callout Title</h3>
 							<p class="callout-item__text">Supportive text for the callout goes here like a pro, which informs and helps users decide what they should do next.</p>
-							<div class="callout-item__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-item__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="callout-row callout-row--disabled">
 							<p class="callout-row__text">Supportive text for the callout.</p>
-							<div class="callout-row__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-row__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="callout-row">
 							<p class="callout-row__text">Supportive text for the callout.</p>
-							<div class="callout-row__buttons button-medium">
-								<div class="button--accent"><button type="submit" class="button">Action</button></div>
-								<div class="button--ghost"><button type="submit" class="button">Action</button></div>
+							<div class="callout-row__buttons">
+								<button type="submit" class="button button--color--accent button--size--medium">Action</button>
+								<button type="submit" class="button button--color--ghost button--size--medium">Action</button>
 							</div>
 						</div>
 					</div>
@@ -1461,7 +1528,7 @@
 								<div class="card-generic__image"><picture><source srcset="img/cards/card-short.webp" type="image/webp"><img src="img/cards/card-short.jpg" alt="card picture"></picture></div>
 								<h3 class="card-generic__title card-item__title">Card Title</h3>
 								<p class="card-generic__text card-item__text">Supporting description for the card goes here like a breeze.</p>
-								<div class="button-medium"><button type="submit" class="button">Action</button></div>
+								<button type="submit" class="button button--size--medium">Action</button>
 							</div>
 							<div class="card-fill card-item">
 								<h3 class="card-fill__title card-item__title">Card Title</h3>
@@ -1470,7 +1537,7 @@
 							<div class="card-text card-item">
 								<h3 class="card-text__title card-item__title">Card Title</h3>
 								<p class="card-text__text card-item__text">Supporting description for the card goes here like a breeze.</p>
-								<div class="button-medium"><button type="submit" class="button">Action</button></div>
+								<button type="submit" class="button button--size--medium">Action</button>
 							</div>
 						</div>
 						<div class="cards__grid">
@@ -1523,7 +1590,7 @@
 									<div class="form__textarea">
 										<textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка" class="textarea textarea-contact"></textarea>
 									</div>
-									<div class="button--accent button-medium"><button type="submit" class="button">Send Message</button></div>
+									<button type="submit" class="button button--color--accent button--size--medium">Send Message</button>
 								</fieldset>
 							</form>
 						</div>
@@ -1541,7 +1608,7 @@
 										<label class="form__label" for="signin-password">Password</label>
 										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" id="signin-password" class="input">
 									</div>
-									<div class="button--accent button-medium "><button type="submit" class="form-signin__button button">Sign In</button></div>
+									<button type="submit" class="form-signin__button button button--color--accent button--size--medium">Sign In</button>
 									<a href="#" class="form__forgot">Forgot password?</a>
 								</fieldset>
 							</form>
@@ -1566,7 +1633,7 @@
 										<input id="checkbox-create" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 										<label for="checkbox-create" class="checkbox__label"><span class="checkbox__text">By signing up, I agree to the terms.</span></label>
 									</div>
-									<div class="button--accent button-medium "><button type="submit" class="form-signin__button button">Sign Up</button></div>
+									<button type="submit" class="form-signin__button button button--color--accent button--size--medium">Sign Up</button>
 								</fieldset>
 							</form>
 							<form action="#" class="form form-reset">
@@ -1578,7 +1645,7 @@
 										<label class="form__label" for="input-name">Email</label>
 										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" id="input-name" class="input">
 									</div>
-									<div class="button--accent button-medium "><button type="submit" class="form-signin__button button">Send Reset Link</button></div>
+									<button type="submit" class="form-signin__button button button--color--accent button--size--medium">Send Reset Link</button>
 									<a href="#" class="form__forgot">Back to Sign in</a>
 								</fieldset>
 							</form>
@@ -1588,7 +1655,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220701230217"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20220705074221"></script>
 	<script>
 		const barData = {
 			labels: [
@@ -1728,6 +1795,7 @@
 							padding: 15,
 							boxWidth: 25,
 							boxHeight: 25,
+
 						},
 						position: 'bottom',
 					},
@@ -1831,7 +1899,9 @@
 		const lineChart = new Chart(document.getElementById('lineChart'), lineConfig);
 		const donutChart = new Chart(document.getElementById('donutChart'), donutConfig);
 	</script>
-	<script src="js/app.min.js?_v=20220701230217"></script>
+	<script src="js/app.min.js?_v=20220705074221"></script>
+
+
 </body>
 
 </html>
